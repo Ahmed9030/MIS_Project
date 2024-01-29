@@ -1,113 +1,15 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!--================ header from php ===================--> 
+<?php 
+     include '../CreaTiveArt/inti.php';
+    include '../templats/header_pages.php'
+?>
 
-<!-- Mirrored from themeturn.com/tf-db/edumel-demo/edumel/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2022 19:38:10 GMT -->
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Edumel- Education Html Template by dreambuzz">
-  <meta name="keywords" content="education,edumel,instructor,lms,online,instructor,dreambuzz,bootstrap,kindergarten,tutor,e learning">
-  <meta name="author" content="dreambuzz">
-
-  <title>creative art</title>
-
-  <!-- Mobile Specific Meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
-  <!-- Iconfont Css -->
-  <link rel="stylesheet" href="assets/vendors/awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendors/flaticon/flaticon.css">
-  <link rel="stylesheet" href="assets/fonts/gilroy/font-gilroy.html">
-  <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
-  <link rel="stylesheet" href="assets/vendors/animated-headline/animated-headline.css">
-  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="assets/css/woocomerce.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-
-</head>
-
+<!--  body -->
 <body id="top-header">
-
-
-
-<header class="header-style-1"> 
-   
-
-    <div class="header-navbar navbar-sticky">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="site-logo">
-                    <a href="index.html">
-                        <!-- <img src="assets/images/logo.png" alt="" class="img-fluid" /> -->
-                        <h3 class="p-relative txt-c mt-0">CreaTiveArt</h3>
-
-                    </a>
-                </div>
-
-                <div class="offcanvas-icon d-block d-lg-none">
-                    <a href="#" class="nav-toggler"><i class="fal fa-bars"></i></a> 
-                </div>
-
-                
-                <nav class="site-navbar ms-auto">
-                    <ul class="primary-menu">
-                        <li class="current">
-                            <a href="index.html">الرئسية </a>
-                            <ul class="submenu">
-                                <li><a href="index.html">الرئسية 1</a></li>
-                    <li><a href="index-2.html"> الرئسية 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">عنا</a></li>
-
-                        <li>
-                            <a href="courses.html">الدورات</a>
-                            <ul class="submenu">
-                                <li><a href="courses.html">الدورات</a></li>
-                                <li><a href="courses-2.html">شبكة الدورات  </a></li>
-                                <li>
-                                    <a href="#">تخطيط فردي</a>
-                                    <ul class="submenu">
-                                        <li><a href="course-single.html">الدورات التدريبية الفردية</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">الصفحات</a>
-                  <ul class="submenu">
-                      <li><a href="instructor.html">المدربين</a></li>
-                      <li><a href="tools.html">الادوات</a></li>
-                      <li><a href="cart.html">عربة التسوق</a></li>
-                      <li><a href="checkout.html">الدفع</a></li>
-                    <li><a href="works-exhibition.html">معرض الاعمال </a></li>
-                            </ul>
-                        </li>
-
-                       
-                        <li>
-                            <a href="contact.html">اتصل بنا </a>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
-                </nav>
-
-                <div class="header-btn d-none d-xl-block">
-                    <a href="login.html" class="login">Login</a>
-                    <a href="Register.html" class="btn btn-main-2 btn-sm-2 rounded">Sign up</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<!--================= navbar from php ============-->
+<?php 
+include "../templats/navbar_pages.php"
+;?>
 <!--====== Header End ======-->
 <section class="page-header">
     <div class="container">
@@ -243,97 +145,9 @@
 
 
     <!-- Footer section start -->
-    <section class="footer footer-4 pt-200">
-      <div class="footer-mid">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 me-auto col-sm-8">
-              <div class="footer-logo mb-3">
-                <h1 class="p-relative txt-c mt-0">CreaTiveArt</h1>
-              </div>
-              <div class="widget footer-widget mb-5 mb-lg-0">				
-                <p>هي منصة عربية توفر كورسات مجانية عالية الجودة 
-                  </p>
-              </div>
-            </div>
-    
-            <div class="col-xl-2 col-sm-4">
-              <div class="footer-widget mb-5 mb-xl-0">
-                <h5 class="widget-title">Explore</h5>
-                <ul class="list-unstyled footer-links">
-                                <li><a href="#">نبذة عنا</a></li>
-                                <li><a href="#">اتصل بنا</a></li>
-                                <li><a href="#">الخدمات</a></li>
-                                <li><a href="#">الدعم</a></li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="col-xl-2 col-sm-4">
-              <div class="footer-widget mb-5 mb-xl-0">
-                <h5 class="widget-title ">Courses</h5>
-                <ul class="list-unstyled footer-links">
-                                <li><a href="#">كبار المسئولين الاعمال </a></li>
-                                <li><a href="#">التسويق الرقمي</a></li>
-                                <li><a href="#">التصميم الجرافيكي </a></li>
-                                <li><a href="#">التسويق الاجتماعي </a></li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="col-xl-2 col-sm-4">
-              <div class="footer-widget mb-5 mb-xl-0">
-                <h5 class="widget-title">Links</h5>
-                <ul class="list-unstyled footer-links">
-                                <li><a href="#">الاخبار و المدونات</a></li>
-                                <li><a href="#">سياسة الخصوصية</a></li>
-                                <li><a href="#">يدعم</a></li>
-                                <li><a href="#">سياسة العائدات</a></li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="col-xl-2 col-sm-4">
-              <div class="footer-widget mb-5 mb-xl-0">
-                <h5 class="widget-title">Address</h5>
-                <ul class="list-unstyled footer-links">
-                  <li><h6 class="text-white">Phone</h6><a href="#">01288736922</a></li>
-                  <li><h6 class="text-white">Email</h6><a href="#">samergege7@gmail.com</a></li>
-                </ul>
-                <div class="footer-socials mt-4">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-pinterest"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="footer-btm">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-6 col-sm-12 col-lg-6">
-              <p class="mb-0 copyright text-sm-center text-lg-start">© 2021 Edumel All rights reserved by <a href="https://themeturn.com/" rel="nofollow">CreaTiveArt</a> </p>
-            </div>
-            <div class="col-xl-6 col-sm-12 col-lg-6">
-              <div class="footer-btm-links text-start text-sm-center text-lg-end">
-                <a href="#">Legal</a>
-                <a href="#">Supports</a>
-                <a href="#">Terms</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="fixed-btm-top">
-        <a href="#top-header" class="js-scroll-trigger scroll-to-top"><i class="fa fa-angle-up"></i></a>
-      </div>
-      
-    </section>
+  <!--================== footer from php ===================-->
+<?php include  '../templats/footer.php'?>
+
     <!-- Footer section End -->
     
 

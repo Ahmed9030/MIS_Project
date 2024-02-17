@@ -1,15 +1,47 @@
 <!--================ header from php ===================--> 
 <?php 
-    include '../CreaTiveArt/inti.php';
-    include '../templats/header_pages.php'
+session_id('creativart');
+session_start();
+$page_title ="Loge In";
+if(isset($_SESSION['user'])){
+    header('Location: courses.php');// redirect to dashboard
+}
+
+    include '../../inti.php';
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+    
+    $username = $_POST['user'];
+    $passwor = $_POST['password'];
+    $hashedpass = sha1($passwor);
+    // check if user Exist in database
+    $stm = $con->prepare(" SELECT 
+                                userID ,username , password 
+                                FROM 
+                                users 
+                            WHERE 
+                                username= ? 
+                            AND 
+                                password= ? 
+                            -- AND userID= 1
+                            LIMIT 1 ");
+    $stm->execute(array($username , $hashedpass));
+    $rows =  $stm->fetch();
+    $count = $stm->rowCount();
+
+    // if count > 0 this is mean the user found in database 
+    if($count > 0){
+        $_SESSION['user'] = $username; // register session username
+        $_SESSION['id'] = $rows['userID']; // register session userID 
+        header('Location: courses.php');// redirect to dashboard
+        exit();
+    }
+}
+
 ?>
 
 <!--  body -->
 <body id="top-header">
-<!--================= navbar from php ============-->
-<?php 
-include "../templats/navbar_pages.php"
-;?>
 <!--====== Header End ======-->
 
 
@@ -26,10 +58,10 @@ include "../templats/navbar_pages.php"
                             Don't have an account yet? <a href="Register.html" class="text-decoration-underline">Sign Up for Free</a>
                         </p>
                     </div>
-                    <form class="woocommerce-form woocommerce-form-login login" method="post">
+                    <form class="woocommerce-form woocommerce-form-login login" action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
                         <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                             <label for="username">Username or email address&nbsp;<span class="required">*</span></label>
-                            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" autocomplete="username" value="" placeholder="Username or Email">
+                            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="user" id="username" autocomplete="username" value="" placeholder="Username or Email">
                         </p>
                         <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                             <label for="password">Password&nbsp;<span class="required">*</span></label>
@@ -50,7 +82,7 @@ include "../templats/navbar_pages.php"
     
                        <p class="form-row">
                             <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="a414dce984"><input type="hidden" name="_wp_http_referer" value="/my-account/">
-                            <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+                            <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Login">Log in</button>
                         </p>
                     </form>
                 </div>

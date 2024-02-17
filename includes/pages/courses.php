@@ -1,3 +1,6 @@
+<?php 
+  include '../../inti.php';
+?>
 <!DOCTYPE html>
 <html lang="zxx">
   <!-- Mirrored from themeturn.com/tf-db/edumel-demo/edumel/courses.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2022 19:38:03 GMT -->
@@ -52,10 +55,6 @@
   </head>
 
   <body id="top-header">
-<!--================= navbar from php ============-->
-<?php 
-include "../templats/navbar_pages.php"
-;?>
     <!--====== Header End ======-->
 
     <section class="page-header">

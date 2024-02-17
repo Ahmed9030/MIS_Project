@@ -3,7 +3,7 @@
 
 <!--
 =========================================
- header for pages >> about.php , cart.php , contact.php , course_single , courses-2.php , instructor.php ,login.php , pages.php , register.php , works-exhibition.php
+ header for pages >> all pages expect index.php , index2.php 
 =========================================
 -->
 <!-- Mirrored from themeturn.com/tf-db/edumel-demo/edumel/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2022 19:38:03 GMT -->
@@ -12,9 +12,9 @@
   <meta name="description" content="Edumel- Education Html Template by dreambuzz">
   <meta name="keywords" content="education,edumel,instructor,lms,online,instructor,dreambuzz,bootstrap,kindergarten,tutor,e learning">
   <meta name="author" content="dreambuzz">
-
-  <title>creative art</title>
-
+  
+  <title><?php getTitle()?></title>
+  
   <!-- Mobile Specific Meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap.min css -->
@@ -29,12 +29,12 @@
   <link rel="stylesheet" href="../../assets/vendors/animated-headline/animated-headline.css">
   <link rel="stylesheet" href="../../assets/vendors/owl/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../../assets/vendors/owl/assets/owl.theme.default.min.css">
-
+  
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../../assets/css/woocomerce.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/responsive.css">
-
+  
 </head>
 
 <body id="top-header">

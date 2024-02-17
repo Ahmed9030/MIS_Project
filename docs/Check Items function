@@ -1,0 +1,6 @@
+**Check Items function v1.0 
+
+**function to check item in database like => [function accpet parametres]
+**$select => the item to select [Example: user : item : category]
+**$from => the table to select from [Example: user : item : category]
+**$value => the value ofr select [Example: Ahmed : box : electronics]

@@ -1,12 +1,154 @@
-<!--================ header from php ===================--> 
 <?php 
+  $page_title = "Home Page";
   include 'inti.php';
-  include $tpl . 'header.php';
- ?>
-<!--  body -->
-<!--================= navbar from php ============-->
- <?php include $tpl . 'navbar.php';?>
 
+?>
+
+<!--================ header  ===================--> 
+<!DOCTYPE html>
+<html lang="zxx">
+  <!-- Mirrored from themeturn.com/tf-db/edumel-demo/edumel/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2022 19:37:58 GMT -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="Edumel- Education Html Template by dreambuzz"
+    />
+    <meta
+      name="keywords"
+      content="education,edumel,instructor,lms,online,instructor,dreambuzz,bootstrap,kindergarten,tutor,e learning"
+    />
+    <meta name="author" content="dreambuzz" />
+
+    <title><?php echo $page_title?></title>
+
+    <!-- Mobile Specific Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css" />
+    <!-- Iconfont Css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/awesome/css/fontawesome-all.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="assets/fonts/gilroy/font-gilroy.html" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/magnific-popup/magnific-popup.css"
+    />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/animated-headline/animated-headline.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/woocomerce.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body id="top-header">
+<!--  body -->
+<!--================= navbar ============-->
+<header class="header-style-1">
+      <div class="header-navbar navbar-sticky">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="site-logo">
+              <a href="index.php">
+                <!-- <img src="assets/images/photo_2023-12-14_23-20-33.jpg" alt="" class="img-fluid" /> -->
+                <h3 class="p-relative txt-c mt-0">CreaTiveArt</h3>
+              </a>
+            </div>
+
+            <div class="offcanvas-icon d-block d-lg-none">
+              <a href="#" class="nav-toggler"><i class="fal fa-bars"></i></a>
+            </div>
+
+            <div class="header-category-menu d-none d-xl-block">
+              <ul>
+                <li class="has-submenu">
+                  <ul class="submenu">
+                    <li>
+                      <a href="#">Design</a>
+                      <ul class="submenu">
+                        <li><a href="#">Design Tools</a></li>
+                        <li><a href="#">Photoshop mastering</a></li>
+                        <li><a href="#">Adobe Xd Deisgn</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Developemnt</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Freelancing</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="site-navbar ms-auto">
+              <ul class="primary-menu">
+                <li class="current">
+                  <a href="index.php">الرئيسية </a>
+                  <ul class="submenu">
+                    <li><a href="index.php">الرئيسية 1</a></li>
+                    <li><a href="index-2.php">الرئيسية 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="<?php echo $nav?>about.php">من نحن ؟</a></li>
+
+                <li>
+                  <a href="<?php echo $nav?>courses.php">الدورات </a>
+                  <ul class="submenu">
+                    <li><a href="<?php echo $nav?>courses.php">الدورات </a></li>
+                    <li><a href="<?php echo $nav?>courses-2.php">شبكة الدورات</a></li>
+                    <li>
+                      <a href="<?php echo $nav?>course-single.php">الدوره التدريبيه الفردية</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">الصفحات </a>
+                  <ul class="submenu">
+                    <li><a href="<?php echo $nav?>instructor.php">المدربين</a></li>
+                    <li><a href="<?php echo $nav?>tools.php">الادوات </a></li>
+                    <li><a href="<?php echo $nav?>cart.php">عربة التسوق</a></li>
+                    <li><a href="<?php echo $nav?>checkout.php">الدفع</a></li>
+                    <li>
+                      <a href="<?php echo $nav?>works-exhibition.php">معرض الاعمال</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="<?php echo $nav?>contact.php">اتصال بنا</a>
+                </li>
+              </ul>
+ 
+              <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
+            </nav>
+
+            <div class="header-btn d-none d-xl-block">
+              <a href="<?php echo $nav?>login.php" class="login">Login</a>
+              <a href="<?php echo $nav?>Register.php" class="btn btn-main-2 btn-sm-2 rounded"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Banner Section Start -->
     <div class="banner-1 mb-5">
       <div class="banner-1__bg">
@@ -95,7 +237,7 @@
         <div class="carousel-inner">
           <div class="carousel-item carousel-img active">
             <img
-              src="assets/images/works-exhibition/FB_IMG_1698869564008.jpg"
+              src="<?php echo $url_image?>works-exhibition/FB_IMG_1698869564008.jpg"
               alt="First slide"
               class="d-block h-100 w-100"
             />
@@ -106,7 +248,7 @@
           </div>
           <div class="carousel-item carousel-img">
             <img
-              src="assets/images/works-exhibition/Screenshot_2023_11_01_22_22_31_53_a23b203fd3aafc6dcb84e438dda678b6.jpg"
+              src="<?php echo $url_image?>works-exhibition/Screenshot_2023_11_01_22_22_31_53_a23b203fd3aafc6dcb84e438dda678b6.jpg"
               alt="Second slide"
               class="d-block w-100"
             />
@@ -117,7 +259,7 @@
           </div>
           <div class="carousel-item carousel-img">
             <img
-              src="assets/images/works-exhibition/Screenshot_2023_11_01_22_18_24_39_a23b203fd3aafc6dcb84e438dda678b6.jpg"
+              src="<?php echo $url_image?>works-exhibition/Screenshot_2023_11_01_22_18_24_39_a23b203fd3aafc6dcb84e438dda678b6.jpg"
               alt="Third slide"
               class="d-block w-100"
             />
@@ -128,7 +270,7 @@
           </div>
           <div class="carousel-item carousel-img">
             <img
-              src="assets/images/works-exhibition/FB_IMG_1698869532889.jpg"
+              src="<?php echo $url_image?>works-exhibition/FB_IMG_1698869532889.jpg"
               alt="Fourth slide"
               class="d-block w-100"
             />
@@ -157,7 +299,7 @@
             <div class="single-course-category style-2 mb-20">
               <div class="course-cat-icon">
                 <img
-                  src="assets/images/icon/icon1.png"
+                  src="<?php echo $url_image?>icon/icon1.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -174,7 +316,7 @@
             <div class="single-course-category style-2">
               <div class="course-cat-icon">
                 <img
-                  src="assets/images/icon/icon6.png"
+                  src="<?php echo $url_image?>icon/icon6.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -191,7 +333,7 @@
             <div class="single-course-category style-2">
               <div class="course-cat-icon">
                 <img
-                  src="assets/images/icon/icon3.png"
+                  src="<?php echo $url_image?>icon/icon3.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -208,7 +350,7 @@
             <div class="single-course-category style-2">
               <div class="course-cat-icon">
                 <img
-                  src="assets/images/icon/icon2.png"
+                  src="<?php echo $url_image?>icon/icon2.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -225,7 +367,7 @@
             <div class="single-course-category style-2">
               <div class="course-cat-icon">
                 <img
-                  src="assets/images/icon/icon3.png"
+                  src="<?php echo $url_image?>icon/icon3.png"
                   alt=""
                   class="img-fluid"
                 />
@@ -359,7 +501,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -427,7 +569,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -497,7 +639,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -568,7 +710,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -637,7 +779,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -708,7 +850,7 @@
                 <div class="course-meta d-flex align-items-center mb-20">
                   <div class="author me-4">
                     <img
-                      src="assets/images/course/course-2.jpg"
+                      src="<?php echo $url_image?>course/course-2.jpg"
                       alt=""
                       class="img-fluid"
                     />
@@ -841,7 +983,7 @@
                   <div class="client-info d-flex align-items-center">
                     <div class="client-img">
                       <img
-                        src="assets/images/clients/testimonial-avata-01.jpg"
+                        src="<?php echo $url_image?>clients/testimonial-avata-01.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -867,7 +1009,7 @@
                   <div class="client-info d-flex align-items-center">
                     <div class="client-img">
                       <img
-                        src="assets/images/clients/testimonial-avata-02.jpg"
+                        src="<?php echo $url_image?>clients/testimonial-avata-02.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -893,7 +1035,7 @@
                   <div class="client-info d-flex align-items-center">
                     <div class="client-img">
                       <img
-                        src="assets/images/clients/testimonial-avata-03.jpg"
+                        src="<?php echo $url_image?>clients/testimonial-avata-03.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -919,7 +1061,7 @@
                   <div class="client-info d-flex align-items-center">
                     <div class="client-img">
                       <img
-                        src="assets/images/clients/testimonial-avata-04.jpg"
+                        src="<?php echo $url_image?>clients/testimonial-avata-04.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -945,7 +1087,7 @@
                   <div class="client-info d-flex align-items-center">
                     <div class="client-img">
                       <img
-                        src="assets/images/clients/testimonial-avata-03.jpg"
+                        src="<?php echo $url_image?>clients/testimonial-avata-03.jpg"
                         alt=""
                         class="img-fluid"
                       />
@@ -970,7 +1112,7 @@
         <div class="row align-items-center">
           <div class="col-xl-6 col-lg-6">
             <img
-              src="assets/images/banner/illustration.png"
+              src="<?php echo $url_image?>banner/illustration.png"
               alt=""
               class="img-fluid"
             />
@@ -999,26 +1141,25 @@
     =====================================-->
 
     <!-- Main jQuery -->
-    <script src="assets/vendors/jquery/jquery.js"></script>
+    <script src="<?php echo $tpl_js?>jquery/jquery.js"></script>
     <!-- Bootstrap 5:0 -->
-    <script src="assets/vendors/bootstrap/popper.min.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.js"></script>
+    <script src="<?php echo $tpl_js?>bootstrap/popper.min.js"></script>
+    <script src="<?php echo $tpl_js?>bootstrap/bootstrap.js"></script>
     <!-- Counterup -->
-    <script src="assets/vendors/counterup/waypoint.js"></script>
+    <script src="<?php echo $tpl_js?>counterup/waypoint.js"></script>
     <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
     <!--  Owl Carousel -->
-    <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+    <script src="<?php echo $tpl_js?>owl/owl.carousel.min.js"></script>
     <!-- Isotope -->
-    <script src="assets/vendors/isotope/jquery.isotope.js"></script>
-    <script src="assets/vendors/isotope/imagelaoded.min.js"></script>
+    <script src="<?php echo $tpl_js?>isotope/jquery.isotope.js"></script>
+    <script src="<?php echo $tpl_js?>isotope/imagelaoded.min.js"></script>
     <!-- Animated Headline -->
-    <script src="assets/vendors/animated-headline/animated-headline.js"></script>
+    <script src="<?php echo $tpl_js?>animated-headline/animated-headline.js"></script>
     <!-- Magnific Popup -->
-    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo $tpl_js?>magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <script src="assets/js/script.js"></script>
   </body>
 
   <!-- Mirrored from themeturn.com/tf-db/edumel-demo/edumel/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Dec 2022 19:38:03 GMT -->
 </html>
-

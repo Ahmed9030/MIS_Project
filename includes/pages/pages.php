@@ -1,7 +1,6 @@
 <!--================ header from php ===================--> 
 <?php 
-    include '../CreaTiveArt/inti.php';
-    include '../templats/header_pages.php'
+    include '../../inti.php';
 ?>
 
 <!--  body -->

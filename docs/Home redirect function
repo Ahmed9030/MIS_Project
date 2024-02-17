@@ -1,0 +1,7 @@
+** Home redirect function v2.0
+
+**this function accept parametres
+**$errorMsg => echo the error message
+**$seconds  => seconds before redirecting
+**$url => uerl of page Directory 
+**if there is error the function will echo the error message and redirect to the profile page

@@ -1,6 +1,6 @@
 <!--
 =========================================
-navbar for pages >> all pages without index.php , index2.php 
+navbar for pages >> all pages expect index.php , index2.php 
 =========================================
 -->
 
@@ -48,15 +48,15 @@ navbar for pages >> all pages without index.php , index2.php
                     <li><a href="../../index-2.php">الرئيسية 2</a></li>
                   </ul>
                 </li>
-                <li><a href="<?php echo $nav?>about.php">من نحن ؟</a></li>
+                <li><a href="about.php">من نحن ؟</a></li>
 
                 <li>
-                  <a href="<?php echo $nav?>courses.php">الدورات </a>
+                  <a href="courses.php">الدورات </a>
                   <ul class="submenu">
-                    <li><a href="<?php echo $nav?>courses.php">الدورات </a></li>
-                    <li><a href="<?php echo $nav?>courses-2.php">شبكة الدورات</a></li>
+                    <li><a href="courses.php">الدورات </a></li>
+                    <li><a href="courses-2.php">شبكة الدورات</a></li>
                     <li>
-                      <a href="<?php echo $nav?>course-single.php">الدوره التدريبيه الفردية</a>
+                      <a href="course-single.php">الدوره التدريبيه الفردية</a>
                     </li>
                   </ul>
                 </li>
@@ -64,18 +64,18 @@ navbar for pages >> all pages without index.php , index2.php
                 <li>
                   <a href="#">الصفحات </a>
                   <ul class="submenu">
-                    <li><a href="<?php echo $nav?>instructor.php">المدربين</a></li>
-                    <li><a href="<?php echo $nav?>tools.php">الادوات </a></li>
-                    <li><a href="<?php echo $nav?>cart.php">عربة التسوق</a></li>
-                    <li><a href="<?php echo $nav?>checkout.php">الدفع</a></li>
+                    <li><a href="instructor.php">المدربين</a></li>
+                    <li><a href="tools.php">الادوات </a></li>
+                    <li><a href="cart.php">عربة التسوق</a></li>
+                    <li><a href="checkout.php">الدفع</a></li>
                     <li>
-                      <a href="<?php echo $nav?>works-exhibition.php">معرض الاعمال</a>
+                      <a href="works-exhibition.php">معرض الاعمال</a>
                     </li>
                   </ul>
                 </li>
 
                 <li>
-                  <a href="<?php echo $nav?>contact.php">اتصال بنا</a>
+                  <a href="contact.php">اتصال بنا</a>
                 </li>
               </ul>
  
@@ -83,8 +83,9 @@ navbar for pages >> all pages without index.php , index2.php
             </nav>
 
             <div class="header-btn d-none d-xl-block">
-              <a href="<?php echo $nav?>login.php" class="login">Login</a>
-              <a href="<?php echo $nav?>Register.php" class="btn btn-main-2 btn-sm-2 rounded"
+              <a href="login.php" class="login">Login</a>
+              <!-- <a href="logout.php" class="logout">Logout  </a> -->
+              <a href="Register.php" class="btn btn-main-2 btn-sm-2 rounded"
                 >Sign up</a
               >
             </div>

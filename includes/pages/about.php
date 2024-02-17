@@ -1,15 +1,12 @@
 <!--================ header from php ===================--> 
-<?php 
-    include './inti.php';
-    include '../templats/header_pages.php'
-?>
+<?php
+  
+  include '../../inti.php';
+
+  ?>
 
 <!--  body -->
 <body id="top-header">
-<!--================= navbar from php ============-->
-<?php 
-include "../templats/navbar_pages.php"
-;?>
 <!--====== Header End ======-->
 <section class="page-header">
     <div class="container">
@@ -107,7 +104,7 @@ include "../templats/navbar_pages.php"
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="team-item team-item-2 mt-5">
                             <div class="team-img">
-                                <img src="assets/images/team/team-4.jpg" alt="" class="img-fluid">
+                                <img src="../../assets/images/team/team-4.jpg" alt="" class="img-fluid">
         
                                 <ul class="team-socials list-inline">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>

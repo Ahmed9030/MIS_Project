@@ -1,15 +1,10 @@
 <!--================ header from php ===================--> 
 <?php 
-     include '../CreaTiveArt/inti.php';
-    include '../templats/header_pages.php'
+    include '../../inti.php';
 ?>
 
 <!--  body -->
 <body id="top-header">
-<!--================= navbar from php ============-->
-<?php 
-include "../templats/navbar_pages.php"
-;?>
 <!--====== Header End ======-->
 <section class="page-header">
     <div class="container">

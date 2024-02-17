@@ -1,15 +1,10 @@
 <!--================ header from php ===================--> 
 <?php 
-    include '../CreaTiveArt/inti.php';
-    include '../templats/header_pages.php'
+    include '../../inti.php';
 ?>
 
 <!--  body -->
 <body id="top-header">
-<!--================= navbar from php ============-->
-<?php 
-include "../templats/navbar_pages.php"
-;?>
 <!--====== Header End ======-->
 <section class="page-header">
     <div class="container">
@@ -48,7 +43,6 @@ include "../templats/navbar_pages.php"
                             <h4>انجيل سمير </h4>
                             <p>رسامة</p>
                         </div>
-        
                         <div class="course-meta">
                             <span class="duration"><i class="far fa-user-alt"></i>20 Students</span>
                             <span class="lessons"><i class="far fa-play-circle me-2"></i>2 Course</span>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -24,10 +22,10 @@
   <!-- animate.css -->
   <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
   <link rel="stylesheet" href="assets/vendors/animated-headline/animated-headline.css">
-  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.caشاةousel.min.css">
   <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
 
-  <!-- Main Stylesheet -->
+  <!-- Main Stylesheet -->-=
   <link rel="stylesheet" href="assets/css/woocomerce.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">

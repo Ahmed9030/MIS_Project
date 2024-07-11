@@ -1,0 +1,9 @@
+======================
+== Function Document==
+======================
+
+getAllFrom($field , $table , string $where = null , string $and= null ,$orderingField , $ordering);
+
+$where : can be empty
+$and : can be empty
+

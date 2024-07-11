@@ -1,0 +1,79 @@
+body{
+background-image: url(../images/banner-3.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+font-family: "Noto Naskh Arabic", serif;
+
+height: 100vh;
+}
+h1{
+   padding-bottom:15px ;
+   margin-left: 75px;
+
+}
+
+
+
+#form{
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px rgb(82,11,77);
+    border-radius: 6px;
+}
+#btn{
+    color: white;
+    background-color: rgb(105,15,190);
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+.my-button {
+  margin: 10px;
+    /* General Styling */
+    background-color: #3498db; /* Adjust background color */
+    color: #fff; /* Adjust text color */
+    padding: 15px 30px; /* Adjust padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Indicate clickable behavior */
+   
+    
+    /* Hover Effect */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+    
+    &:hover {
+      background-color: #2980b9; /* Adjust hover background color */
+    }
+    
+    /* Optional Active/Pressed Effect */
+    &:active {
+      transform: translateY(2px); /* Slightly move down on click */
+    }
+  }
+  a{
+    text-decoration: none;
+    color: white;
+
+  }
+  .line{
+    color:black;
+    padding-right: 3px;   
+    text-decoration: none; 
+  }
+  .line:hover{
+    text-decoration: underline;
+    color: red;
+    transition: 0.8s;
+  }
+  .link{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  

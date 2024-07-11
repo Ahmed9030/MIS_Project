@@ -1,0 +1,30 @@
+.video-container {
+    display: flex; /* استخدام Flexbox لتنسيق الفيديو والقائمة الجانبية */
+    padding: 20px;
+}
+
+.video-main {
+    flex: 2; /* الجزء الأكبر للفيديو الرئيسي */
+}
+
+.video-sidebar {
+    flex: 1; /* جزء أصغر للقائمة الجانبية */
+    padding-left: 20px;
+}
+
+.video-list-item {
+    margin-bottom: 15px; /* مسافة بين عناصر القائمة */
+    display: flex; /* لضمان وجود الصورة المصغرة والنص بجانب بعضهما */
+    align-items: center;
+    cursor: pointer; /* إشارة إلى أنه عنصر قابل للنقر */
+}
+
+.video-list-item img {
+    width: 120px; /* حجم الصورة المصغرة */
+    height: 90px; /* ارتفاع الصورة المصغرة */
+    border-radius: 4px; /* جعل الزوايا مستديرة */
+}
+
+.video-list-item .video-info {
+    padding-left: 10px; /* مسافة بين الصورة والنص */
+}

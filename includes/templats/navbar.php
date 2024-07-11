@@ -1,16 +1,16 @@
 <!--
 =========================================
- navbar for pages >> index.php , index2.php ,
+navbar for pages >> all pages expect index.php , index2.php 
 =========================================
 -->
 
-<header class="header-style-1">
-      <div class="header-navbar navbar-sticky">
+<header class="header-style-1"> 
+    <div class="header-navbar navbar-sticky">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="site-logo">
-              <a href="index.php">
-                <!-- <img src="assets/images/photo_2023-12-14_23-20-33.jpg" alt="" class="img-fluid" /> -->
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="site-logo">
+                    <a href="index.php">
+                       
                 <h3 class="p-relative txt-c mt-0">CreaTiveArt</h3>
               </a>
             </div>
@@ -21,72 +21,76 @@
 
             <div class="header-category-menu d-none d-xl-block">
               <ul>
-                <li class="has-submenu">
-                  <ul class="submenu">
-                    <li>
-                      <a href="#">Design</a>
-                      <ul class="submenu">
-                        <li><a href="#">Design Tools</a></li>
-                        <li><a href="#">Photoshop mastering</a></li>
-                        <li><a href="#">Adobe Xd Deisgn</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Developemnt</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Freelancing</a></li>
-                  </ul>
-                </li>
+                <li class="has-submenu"></li>
               </ul>
             </div>
 
             <nav class="site-navbar ms-auto">
               <ul class="primary-menu">
                 <li class="current">
-                  <a href="index.php">الرئيسية </a>
-                  <ul class="submenu">
-                    <li><a href="index.php">الرئيسية 1</a></li>
-                    <li><a href="index-2.php">الرئيسية 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="<?php echo $nav?>about.php">من نحن ؟</a></li>
+                  <a href="index.php">الرئسية </a>
 
-                <li>
-                  <a href="<?php echo $nav?>courses.php">الدورات </a>
-                  <ul class="submenu">
-                    <li><a href="<?php echo $nav?>courses.php">الدورات </a></li>
-                    <li><a href="<?php echo $nav?>courses-2.php">شبكة الدورات</a></li>
-                    <li>
-                      <a href="<?php echo $nav?>course-single.php">الدوره التدريبيه الفردية</a>
+
+
+                  <li>
+                    <a href="about.php">من نحن ؟</a>
+                    <ul class="submenu">
+                    <li><a href="drow-courses.php"> مدربة الرسم </a></li>
+                    <li><a href="works-exhibition.php">معرض الاعمال </a></li>
+                  
                     </li>
                   </ul>
-                </li>
-
-                <li>
-                  <a href="#">الصفحات </a>
+                 <li>
+              
+                    <a href="drow-courses.php">الدورات </a>   
                   <ul class="submenu">
-                    <li><a href="<?php echo $nav?>instructor.php">المدربين</a></li>
-                    <li><a href="<?php echo $nav?>tools.php">الادوات </a></li>
-                    <li><a href="<?php echo $nav?>cart.php">عربة التسوق</a></li>
-                    <li><a href="<?php echo $nav?>checkout.php">الدفع</a></li>
+                    <li><a href="drow-courses.php">كورسات الرسم</a></li>
                     <li>
-                      <a href="<?php echo $nav?>works-exhibition.php">معرض الاعمال</a>
+                      <a href="course-single.php">الدوره التدريبيه الفردية</a>
                     </li>
                   </ul>
+                  
                 </li>
 
                 <li>
-                  <a href="<?php echo $nav?>contact.php">اتصال بنا</a>
+                  <a href="tools.php">معرض المنتجات</a>                   
+                </li>
+
+                <!-- showe the dashbord to user -->
+                <?php if(isset($_SESSION['user'])){?>
+
+                  <li>
+                    <a href="dashbord.php"><?php echo $_SESSION['user']?></a>
+                    <ul class="submenu">
+                      <li><a href="dashbord.php">الملف الشخصي</a></li>
+                      <li><a href="information.php?action=Edit&user_id=<?php echo $session_id?>">تعديل بياناتي </a></li>
+                    </ul>
+                  </li>
+
+                <?php }?>
+
+                <li>
+                  <a href="contact.php">اتصل بنا</a>
                 </li>
               </ul>
- 
+
               <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
             </nav>
 
             <div class="header-btn d-none d-xl-block">
-              <a href="<?php echo $nav?>login.php" class="login">Login</a>
-              <a href="<?php echo $nav?>Register.php" class="btn btn-main-2 btn-sm-2 rounded"
-                >Sign up</a
-              >
+
+            <?php 
+            if(isset($_SESSION['user'])){
+
+              echo  "<a href='logout.php'>Logout</a>" ; 
+
+            }else{
+            ?>
+                <a href="login.php" class="login">تسجيل الدخول</a>
+                <a href="Register.php" class="btn btn-main-2 btn-sm-2 rounded">
+                  سجل الان</a
+                > 
+              <?php }?>
             </div>
           </div>
         </div>

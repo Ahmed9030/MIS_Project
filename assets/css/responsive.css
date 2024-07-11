@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    /* max-width: 922px; */
   }
   .nav-item.dropdown .dropdown-menu:not(.submenu) {
     opacity: 0;

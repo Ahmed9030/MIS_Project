@@ -1,4 +1,4 @@
-### Graduation project in Management Information Systems
+## ❤️ Graduation project in Management Information Systems ❤️
 
 # Project Overview
 
@@ -8,10 +8,6 @@
 - **Created**: September 10, 2023
 - **License**: Open Source
 
-# Prerequisites
-- Python 3.x
-- PostgreSQL
-- pip
 
 ## 🎯 Project Goals
 
@@ -102,75 +98,76 @@ Before setting up the project, ensure you have the following installed:
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 
   ```bash
-git clone https://github.com/Ahmed9030/MIS_Project.git
-cd MIS_Project
+    git clone https://github.com/Ahmed9030/MIS_Project.git
+    cd MIS_Project
+  ```
 
 ## Step 2: Environment Setup
 # Option A: Using Apache (XAMPP/WAMP)
 # For Windows (XAMPP):
    ```bash
-   # Copy the project to your XAMPP directory
-   # C:\xampp\htdocs\MIS_Project
+      # Copy the project to your XAMPP directory
+     # C:\xampp\htdocs\MIS_Project
    ```
 # For Windows (WAMP):
    ```bash
-   # Copy to C:\wamp\www\MIS_Project
-   Option B: Using PHP Built-in Server
+       # Copy to C:\wamp\www\MIS_Project
+       Option B: Using PHP Built-in Server
    ```
    ```bash
-   cd MIS_Project
-   php -S localhost:8000
+       cd MIS_Project
+       php -S localhost:8000
 ```
 ## Step 3: Install Dependencies
    ```bash
-   # Install Node.js dependencies (if package.json exists)
-   npm install
-   # Compile SCSS/Less files (if applicable)
-   npm run build
+     # Install Node.js dependencies (if package.json exists)
+     npm install
+     # Compile SCSS/Less files (if applicable)
+     npm run build
    ```
 ## Step 4: Database Setup
 If the project uses a database:
 
    ```bash
-   # Import database file
-   mysql -u username -p database_name < database.sql
-   
-   # Or use phpMyAdmin if available
-   # 1. Create a new database in phpMyAdmin
-   # 2. Import the SQL file
+       # Import database file
+       mysql -u username -p database_name < database.sql
+     
+       # Or use phpMyAdmin if available
+       # 1. Create a new database in phpMyAdmin
+       # 2. Import the SQL file
    ```
 ## Step 5: Configuration
 Create a .env file in the project root:
 
    ```bash
-   # Copy example environment file
-   cp .env.example .env
+     # Copy example environment file
+     cp .env.example .env
    ```
 Update the .env file with your configuration:
 
 ```env
-   # Database Configuration
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=your_password
-   DB_NAME=mis_project
-
-   # Server Configuration
-   APP_URL=http://localhost:8000
-   APP_ENV=development
-   APP_DEBUG=true
-
-   # Additional Settings
-   TIMEZONE=UTC
+     # Database Configuration
+     DB_HOST=localhost
+     DB_USER=root
+     DB_PASSWORD=your_password
+     DB_NAME=mis_project
+  
+     # Server Configuration
+     APP_URL=http://localhost:8000
+     APP_ENV=development
+     APP_DEBUG=true
+  
+     # Additional Settings
+     TIMEZONE=UTC
    ```
 
 ## Step 6: Set File Permissions
 For Linux/Mac:
 
    ```bash
-   chmod -R 755 ./
-   chmod -R 777 uploads/    # or whichever directory needs write access
-   chmod -R 777 logs/       # if logs directory exists
+     chmod -R 755 ./
+     chmod -R 777 uploads/    # or whichever directory needs write access
+     chmod -R 777 logs/       # if logs directory exists
    ```
 For Windows:
 Right-click on the folder → Properties → Security → Edit permissions
@@ -187,42 +184,42 @@ Database Configuration
 Update your database credentials in includes/config.php:
 
 ```PHP
-<?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'your_password');
-define('DB_NAME', 'mis_project');
-?>
+  <?php
+  define('DB_HOST', 'localhost');
+  define('DB_USER', 'root');
+  define('DB_PASSWORD', 'your_password');
+  define('DB_NAME', 'mis_project');
+  ?>
 ```
 
 # Server Configuration
 Apache (.htaccess):
 ```apache
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /MIS_Project/
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-</IfModule>
+  <IfModule mod_rewrite.c>
+      RewriteEngine On
+      RewriteBase /MIS_Project/
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+  </IfModule>
 ```
 
 # Nginx (nginx.conf):
 
 ```Nginx
-server {
-    listen 80;
-    server_name localhost;
-    root /path/to/MIS_Project;
-    index index.php;
-
-    location ~ \.php$ {
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include fastcgi_params;
-    }
-}
+  server {
+      listen 80;
+      server_name localhost;
+      root /path/to/MIS_Project;
+      index index.php;
+  
+      location ~ \.php$ {
+          fastcgi_pass 127.0.0.1:9000;
+          fastcgi_index index.php;
+          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+          include fastcgi_params;
+      }
+  }
 ```
 
 ## ⚙️ Development Workflow
@@ -230,7 +227,7 @@ Running the Project Locally
 
 Using PHP Built-in Server:
 ```bash
-php -S localhost:8000
+    php -S localhost:8000
 ```
 # Using Apache/Nginx:
 - Configure your web server
@@ -240,4 +237,5 @@ php -S localhost:8000
 - Author: Ahmed9030
 - Email: ag1386840@gmail.com
 - LinkedIn: https://www.linkedin.com/in/ahmed-gomaa99/
-     Thank You For Reading ❤️
+
+Thank You For Reading ❤️
